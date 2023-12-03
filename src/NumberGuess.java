@@ -23,16 +23,16 @@ public class NumberGuess {
         attemptCount = 0;
         gameScore = 101;
 
-        titleLabel.setBounds(60, 70, 400, 20);
+        titleLabel.setBounds(75, 70, 400, 20);
         titleLabel.setForeground(new Color(255, 255, 255));
         titleLabel.setFont(new Font("Sans Serif", Font.BOLD, 20));
 
-        textField.setBounds(150, 100, 80, 30);
+        textField.setBounds(165, 100, 80, 30);
         textField.setFont(new Font("Sans Serif", Font.BOLD, 15));
         textField.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
         textField.setHorizontalAlignment(JLabel.CENTER);
 
-        checkButton.setBounds(150, 140, 80, 30);
+        checkButton.setBounds(165, 140, 80, 30);
         checkButton.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
         checkButton.setFont(new Font("Sans Serif", Font.BOLD, 17));
         checkButton.setFocusable(false);
@@ -40,16 +40,17 @@ public class NumberGuess {
         checkButton.setForeground(new Color(255, 255, 255));
         checkButton.addActionListener(e -> {
             int guessedNumber = Integer.parseInt(textField.getText());
-            textField.setText("");
             attemptCount++;
             gameScore--;
             attempt.setText(String.valueOf(attemptCount));
             score.setText(String.valueOf(gameScore));
             if(guessedNumber > generatedNumber){
                 message.setText(guessedNumber + " is greater!!");
+                textField.setText("");
             }
             else if(guessedNumber < generatedNumber){
                 message.setText(guessedNumber + " is less!");
+                textField.setText("");
             }
             else{
                 message.setText("You win!! Score: " + gameScore);
@@ -57,7 +58,7 @@ public class NumberGuess {
             }
         });
 
-        message.setBounds(30, 180, 300, 30);
+        message.setBounds(50, 180, 300, 30);
         message.setFont(new Font("Sans Serif", Font.ITALIC, 16));
         message.setForeground(new Color(255, 255, 255));
         message.setOpaque(true);
@@ -65,29 +66,29 @@ public class NumberGuess {
         message.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
         message.setHorizontalAlignment(JLabel.CENTER);
 
-        attemptLabel.setBounds(100, 250, 80, 30);
+        attemptLabel.setBounds(120, 250, 80, 30);
         attemptLabel.setForeground(new Color(255, 255, 255));
         attemptLabel.setFont(new Font("Sans Serif", Font.BOLD, 17));
 
-        attempt.setBounds(200, 250, 80, 30);
+        attempt.setBounds(220, 250, 80, 30);
         attempt.setFont(new Font("Sans Serif", Font.BOLD, 17));
         attempt.setOpaque(true);
         attempt.setBackground(new Color(255, 255, 255));
         attempt.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
         attempt.setHorizontalAlignment(JLabel.CENTER);
 
-        scoreLabel.setBounds(100, 290, 80, 30);
+        scoreLabel.setBounds(120, 290, 80, 30);
         scoreLabel.setForeground(new Color(255, 255, 255));
         scoreLabel.setFont(new Font("Sans Serif", Font.BOLD, 17));
 
-        score.setBounds(200, 290, 80, 30);
+        score.setBounds(220, 290, 80, 30);
         score.setFont(new Font("Sans Serif", Font.BOLD, 17));
         score.setOpaque(true);
         score.setBackground(new Color(255, 255, 255));
         score.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
         score.setHorizontalAlignment(JLabel.CENTER);
 
-        playAgain.setBounds(130, 340, 130, 30);
+        playAgain.setBounds(140, 340, 130, 30);
         playAgain.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
         playAgain.setFont(new Font("Sans Serif", Font.PLAIN, 17));
         playAgain.setFocusable(false);
