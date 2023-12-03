@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a51329a5-d7d1-4e3c-b272-1d0b3eeb8493" name="Changes" comment="Implemented the Number Guess Game">
+    <list default="true" id="a51329a5-d7d1-4e3c-b272-1d0b3eeb8493" name="Changes" comment="Enhanced UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NumberGuess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberGuess.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -72,6 +74,7 @@
       <workItem from="1701332995368" duration="5336000" />
       <workItem from="1701355070582" duration="1310000" />
       <workItem from="1701541651847" duration="54000" />
+      <workItem from="1701573197500" duration="1478000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented the Number Guess Game">
       <option name="closed" value="true" />
@@ -81,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701338086230</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Enhanced UI">
+      <option name="closed" value="true" />
+      <created>1701573333339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701573333339</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +111,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented the Number Guess Game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the Number Guess Game" />
+    <MESSAGE value="Enhanced UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhanced UI" />
   </component>
 </project>
